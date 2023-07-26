@@ -1,4 +1,4 @@
 # MDE
 Microsoft Defender for Endpoint
 
-MDE API scripts to accomplish various tasks
+Scripts to automate various tasks in MDE via API
