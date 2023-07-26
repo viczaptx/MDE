@@ -1,6 +1,6 @@
 ﻿############################################################################
 #                                                                          #
-#        This Script will unisolate devices in MDE by device tag           #
+#          This Script will isolate devices in MDE by device tag           #
 #                                                                          #
 ############################################################################
 
