@@ -1,16 +1,29 @@
-﻿# SQL SERVER INFO
+﻿############################################################################
+#                                                                          #
+# This Script will pull vulnerabilities by device from MDE and send to SQL #
+#                                                                          #
+############################################################################
+
+# NOTE: THIS IS A SAMPLE SCRIPT AND SHOULD BE TREATED AS SUCH
+# YOU MUST TEST AND ASSUME ALL RESPONSIBILITY
+# Author: Victor Zapata
+# Date / Version
+# 07-26-2023 / 1.0
+
+
+# SQL SERVER INFO
 $Server = "<SQL SERVER NAME or IP>"
-$Db = "<DATABASE NAME - SHORTNAME>"      ### EXAMPLE: "VulnsDb"
-$Table = "<FULL TABLE PATH>"             ### EXAMPLE: "VulnsDb.dbo.Findings"
-$tempFile = "<PATH TO CSV OUTPUT FILE>"  ### EXAMPLE: "c:\Temp\DeviceVulns.csv"
+$Db = "<DATABASE NAME - SHORTNAME>"      ### Enter SQL database name - EXAMPLE: "VulnsDb"
+$Table = "<FULL TABLE PATH>"             ### Enter SQL table name - EXAMPLE: "VulnsDb.dbo.Findings"
+$tempFile = "<PATH TO CSV OUTPUT FILE>"  ### Enter full path to output file that will be created - EXAMPLE: "c:\Temp\DeviceVulns.csv"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 # That code gets the App Context Token
 # Paste below your Tenant ID, App ID and App Secret (App key).
 
-$tenantId =  ### Paste your tenant ID here
-$appId =     ### Paste your Application ID here
-$appSecret = ### Paste your Application secret here
+$tenantId = '000000000000000000000' ### Paste your own tenant ID here
+$appId = '000000000000000000000' ### Paste your own app ID here
+$appSecret = '000000000000000000000' ### Paste your own app keys here
 
 $resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
 $oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
