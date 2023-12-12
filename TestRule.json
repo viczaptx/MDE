@@ -14,7 +14,7 @@
             "kind": "Scheduled",
             "apiVersion": "2022-11-01-preview",
             "properties": {
-                "displayName": "FROM REPO - Successful logon from IP and failure from a different IP",
+                "displayName": "FROM REPO 2 - Successful logon from IP and failure from a different IP",
                 "description": "Identifies when a user account successfully logs onto an Azure App from one IP and within 10 mins failed to logon to the same App via a different IP (may indicate a malicious attempt at password guessing with known account). UEBA added for context.",
                 "severity": "Medium",
                 "enabled": true,
